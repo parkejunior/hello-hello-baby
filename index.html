@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, Hello, Baby</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-background">
+    <video src="background.webm" autoplay muted loop></video>
+  </div>
+
+  <main>
+    <div class="container">
+      <header>
+        <h1 class="logo">Hello, Hello, Baby</h1>
+      </header>
+
+      <section>
+        <form id="addContactForm">
+          <div>
+            <label for="contactName">Contact Name</label>
+            <input type="text" name="name" id="contactName">
+          </div>
+          <div>
+            <label for="contactPhoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="contactPhoneNumber">
+          </div>
+          <button type="submit">Add</button>
+        </form>
+
+        <table id="contactsTable" class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
